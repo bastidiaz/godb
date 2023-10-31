@@ -10,8 +10,8 @@ func main() {
 	var value string
 	var action string
 
-	fmt.Println("This is a simple mapping program. You can store and remove integer values from a map as well as print it.")
-	fmt.Println("sv\t- maps a value with a corresponding key; takes in a string key and an integer value (e. g., sv n3 50)")
+	fmt.Println("This is a simple mapping program. You can store and remove string values from a map as well as print it.")
+	fmt.Println("sv\t- maps a value with a corresponding key; takes in a key and a corresponding value (e. g., sv n3 pw2)")
 	fmt.Println("rv\t- deletes a value with and using its corresponding key; takes in a string key (e. g., rv n3)")
 	fmt.Println("cm\t- clears the map, deleting all values")
 	fmt.Println("pm\t- prints the map")
