@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-	myMap := make(map[string]int)
+	myMap := make(map[string]string)
 	var key string
-	var value int
+	var value string
 	var action string
 
 	fmt.Println("This is a simple mapping program. You can store and remove integer values from a map as well as print it.")
@@ -54,15 +54,15 @@ func main() {
 	}
 }
 
-func storeValue(myMap map[string]int, key string, value int) {
+func storeValue(myMap map[string]string, key string, value string) {
 	myMap[key] = value
 }
 
-func rmValue(myMap map[string]int, key string) {
+func rmValue(myMap map[string]string, key string) {
 	delete(myMap, key)
 }
 
-func clearMap(myMap map[string]int) {
+func clearMap(myMap map[string]string) {
 	for key := range myMap {
 		delete(myMap, key)
 	}
