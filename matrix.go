@@ -19,7 +19,8 @@ func main() {
 		matrix[i] = make([]float32, columns)
 	}
 
-	println("Input elements:")
+	/* Store the elements in their respective indices, from index [0][0] to [i - 1][j - 1] */
+	println("\nInput elements:")
 	for i := 0; i < rows; i++ {
 		for j := 0; j < columns; j++ {
 			fmt.Printf("For matrix[%d][%d]: ", i, j)
@@ -27,7 +28,8 @@ func main() {
 		}
 	}
 
-	fmt.Println("Matrix:")
+	/* Print the matrix */
+	fmt.Println("\nMatrix:")
 	for i := 0; i < rows; i++ {
 		for j := 0; j < columns; j++ {
 			fmt.Printf("%.2f\t", matrix[i][j])
@@ -35,11 +37,14 @@ func main() {
 		fmt.Println()
 	}
 
-	fmt.Println("Transposed matrix:")
+	/* Print the transposed matrix, inverting the rows and the columns */
+	fmt.Println("\nTransposed matrix:")
 	for i := 0; i < columns; i++ {
 		for j := 0; j < rows; j++ {
 			fmt.Printf("%.2f\t", matrix[j][i])
 		}
 		fmt.Println()
 	}
+
+	fmt.Printf("\n%v", matrix) // Print the matrix as a slice
 }
