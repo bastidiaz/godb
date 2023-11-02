@@ -57,7 +57,6 @@ func generate() int {
 
 	for {
 		randomID := rand.Intn(9999999) + 10000000
-
 		if verify(randomID) {
 			return randomID
 		}
